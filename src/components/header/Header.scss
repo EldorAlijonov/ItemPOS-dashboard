@@ -1,0 +1,70 @@
+.header {
+    height: 80px;
+    background-color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0;
+    border-bottom: 1px solid rgba(186, 186, 186, 0.1);
+
+
+    .breadcrumb {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #373737
+    }
+
+
+    .header-search {
+        padding: 0 10px;
+        width: 359px;
+        height: 46px;
+        border-radius: 10px;
+        background-color: #F9F9F9;
+
+        input {
+            outline: none;
+            border: none;
+            padding: 5px;
+            width: 100%;
+            background: transparent;
+
+            &:placeholder {
+                color: #ADAEB5;
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .item-language {
+        font-size: 15px;
+        font-weight: 400;
+        color: #828282;
+    }
+
+    .bell-badge {
+        position: relative;
+        color: #828282;
+        cursor: pointer;
+
+        &::after {
+            top: 0px;
+            right: 2px;
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #2CC56F;
+        }
+
+    }
+
+    .ant-avatar {
+        cursor: pointer;
+        border: none;
+    }
+}

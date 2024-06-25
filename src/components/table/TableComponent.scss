@@ -1,0 +1,114 @@
+.table {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0px 6px 9px -5px rgba(186, 186, 186, 0.15);
+
+    .table-content-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .table-title {
+            font-weight: 500;
+            font-size: 22px;
+            color: #080D1C;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+
+            li {
+                span {
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #37474FB2;
+
+                    &.active {
+                        color: #2CC56F;
+                    }
+                }
+            }
+        }
+    }
+
+    .table-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+            border-bottom: 1px solid #F2F2F2;
+
+            td,
+            th {
+                padding: 10px;
+                text-align: start;
+
+                &:last-child {
+                    display: flex;
+                    justify-content: end;
+                }
+            }
+
+            th {
+                font-weight: 400;
+                font-size: 14px;
+                color: #2E2E2E;
+
+                .table-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    .icon {
+                        transform: rotate(90deg);
+                        color: #B6B7BC;
+                    }
+                }
+            }
+
+            td {
+                font-weight: 500;
+                font-size: 14px;
+                color: #71747D;
+
+                .status {
+                    width: 81.39px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 19px;
+                    line-height: 14px;
+                    font-weight: 500;
+                    font-style: 12px;
+
+                    &.Complete {
+                        background-color: #E6F6E9;
+                        color: #2CC56F;
+                    }
+
+                    &.Pending {
+                        background-color: #FFB07426;
+                        color: #FF9A00;
+                    }
+                }
+
+                .payment-status {
+                    &.Paid {
+                        color: #2CC56F;
+                    }
+
+                    &.Unpaid {
+                        color: #FF9A00;
+                    }
+                }
+            }
+        }
+    }
+
+}
